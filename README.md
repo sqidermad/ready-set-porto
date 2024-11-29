@@ -7,27 +7,27 @@ A simple portfolio website using:
 - CSS for styling
 - JavaScript for interactivity
 
-## Before Class
+## Alat dan bahan (kompor) https://www.youtube.com/watch?v=c96leQ_fRII
 1. Install [Cursor](https://cursor.sh/)
 2. Create a [GitHub](https://github.com) account
 
 ## Workshop Flow
-1. Understanding the template
-2. Manual coding practice
-3. AI-assisted enhancements
+1. Understanding building blocks of web
+2. Understanding what should a portfolio answer
+3. Manual coding practice
+4. AI-assisted enhancements
 
 ## Tasks Checklist
-### Basic Setup
-- [ ] Update personal information
-- [ ] Add your introduction
+### Basic Setup and manipulation (on class)
+- [ ] Update your personal information
+- [ ] How to make the card if projects is more than 2?
+- [ ] How to make the card can be clickable, and redirect to another page outside this web?
+- [ ] How to make the card can be clickable, and trigger a modal/dialog/popup?
 - [ ] Choose your color scheme
 
-### Content Creation
-- [ ] Complete About section
-- [ ] Add project details
-- [ ] Include contact information
-
 ### Enhancements
+- [ ] Switch theme dark/light
+- [ ] Deploy to GitHub Pages
 - [ ] Add smooth transitions
 - [ ] Make it mobile-friendly
 - [ ] Optimize for accessibility

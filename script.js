@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const content = document.getElementById('content');
-    const links = document.querySelectorAll('.nav-link');
-    
-    // Content for each section
-    const sections = {
-        about: `
+document.addEventListener("DOMContentLoaded", function () {
+
+  const content = document.getElementById("content");
+  const links = document.querySelectorAll(".nav-link");
+
+  const sections = {
+    about: ` 
             <div class="fade-in">
                 <h2>About Me</h2>
                 <div style="text-align: left; max-width: 800px; margin: 0 auto;">
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         `,
-        projects: `
+    projects: `
             <div class="fade-in">
                 <h2>Projects</h2>
                 <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 2rem 0; text-align: left;">
@@ -50,20 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
                             <a href="#" style="color: #0066cc; text-decoration: none;">GitHub</a>
                         </div>
                     </div>
-
-                    <div class="project-card" style="border: 1px solid #eee; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                        <h3 style="color: #2a2a2a;">🌟 MindfulMinutes</h3>
-                        <p style="margin: 10px 0;">Meditation and mindfulness app with guided sessions and progress tracking.</p>
-                        <p style="color: #666; margin: 10px 0;">🛠️ React, Express.js, PostgreSQL</p>
-                        <div style="margin-top: 15px;">
-                            <a href="#" style="color: #0066cc; text-decoration: none; margin-right: 15px;">Demo</a>
-                            <a href="#" style="color: #0066cc; text-decoration: none;">GitHub</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         `,
-        contact: `
+    contact: `
             <div class="fade-in">
                 <h2>Let's Connect!</h2>
                 <div style="max-width: 600px; margin: 2rem auto; text-align: left;">
@@ -90,30 +80,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
             </div>
-        `
-    };
+        `,
+  };
 
-    // Show section content
-    function showSection(sectionId) {
-        content.innerHTML = sections[sectionId];
-        
-        // Update active link
-        links.forEach(link => {
-            link.classList.remove('active');
-            if(link.dataset.section === sectionId) {
-                link.classList.add('active');
-            }
-        });
-    }
+  function showSection(sectionId) {
+    content.innerHTML = sections[sectionId];
+  }
 
-    // Add click handlers
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            showSection(link.dataset.section);
-        });
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      showSection(link.dataset.section);
     });
+  });
 
-    // Show 'about' section by default when page loads
-    showSection('about');
-}); 
+  showSection("about");
+});
